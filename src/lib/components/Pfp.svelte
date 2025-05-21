@@ -1,3 +1,5 @@
+<!-- dont look here -->
+
 <script>
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
@@ -116,3 +118,4 @@
 		/>
 	</div>
 </div>
+
