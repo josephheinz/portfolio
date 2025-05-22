@@ -94,10 +94,10 @@
 			mask-size: contain;
 			background: repeating-linear-gradient(
 				135deg,
-				magenta,
-				magenta 20px,
-				purple 20px,
-				purple 40px
+				oklch(65.6% 0.241 354.308),
+				oklch(65.6% 0.241 354.308) 20px,
+				oklch(45.2% 0.211 324.591) 20px,
+				oklch(45.2% 0.211 324.591) 40px
 			);
 			overflow: hidden;
 			position: relative;
@@ -118,4 +118,3 @@
 		/>
 	</div>
 </div>
-

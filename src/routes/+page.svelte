@@ -4,7 +4,8 @@
 	import Pfp from '$lib/components/Pfp.svelte';
 	import NameMarquee from '$lib/components/NameMarquee.svelte';
 	import VerticalDivider from '$lib/components/VerticalDivider.svelte';
-    import Button from '$lib/components/Button.svelte';
+	import Button from '$lib/components/Button.svelte';
+	import SquiggleSpacer from '$lib/components/SquiggleSpacer.svelte';
 </script>
 
 <Navbar>
@@ -15,22 +16,23 @@
 </Navbar>
 
 <!-- Hero section -->
-<main class="flex items-center justify-center h-min px-40 py-16">
+<main class="flex h-min items-center justify-center px-40 py-16">
 	<Pfp />
 	<VerticalDivider />
-    <div class="flex flex-col justify-start items-end h-full text-right grow">
-        <h1 class="text-h1 font-bold">I'm Joseph</h1>
-        <h2 class="text-h4 font-semibold text-stone-500">A web developer from Michigan</h2>
-        <div class="h-[100px]"></div>
-        <h3 class="text-h3 font-bold text-stone-700">Something</h3>
-        <div class="flex gap-6 px-2 py-3">
-            <Button>
-                My Work
-            </Button>
-            <Button>
-                About Me
-            </Button>
-        </div>
-    </div>
+	<div class="flex h-full grow flex-col items-end justify-start text-right">
+		<h1 class="text-h1 font-black">I'm Joseph</h1>
+		<h2 class="text-h4 font-semibold text-stone-500">A web developer from Michigan</h2>
+		<div class="h-[100px]"></div>
+		<h3 class="text-h3 font-bold text-stone-700">Something</h3>
+		<div class="flex gap-6 px-2 py-3">
+			<Button className="text-h6">My Work</Button>
+			<Button className="text-h6" variant="secondary">About Me</Button>
+		</div>
+	</div>
 </main>
 <NameMarquee />
+<!-- About me -->
+<div class="flex h-min flex-col items-end justify-start px-40 py-16">
+	<h1 class="text-h1 font-black">About Me</h1>
+</div>
+<SquiggleSpacer />

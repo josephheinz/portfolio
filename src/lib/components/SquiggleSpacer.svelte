@@ -1,0 +1,1 @@
+<img src="squiggle.png" class="w-[90%] mx-auto my-[100px]">
