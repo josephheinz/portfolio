@@ -17,6 +17,8 @@
 		--text-h5: 1.999rem;
 		--text-h6: 1.414rem;
 		--text-para: 1rem;
+
+		--shadow-custom:4px 2px 0px 0px rgba(0,0,0,1);
 	}
 }
 

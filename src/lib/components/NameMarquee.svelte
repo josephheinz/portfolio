@@ -59,9 +59,9 @@
 			stroke-width="75"
 			id="curve"
 		/>
-		<text fill="black" text-anchor="middle" class="text-h4 font-bold uppercase">
+		<text fill="black" text-anchor="middle" class="text-h4 font-extrabold uppercase">
 			{#each array as i}
-				<textPath class="textPath" href="#curve" startOffset={`${i * 17.5}%`}>
+				<textPath class="textPath font-extrabold" href="#curve" startOffset={`${i * 17.5}%`}>
 					Joseph Heinz
 				</textPath>
 			{/each}
