@@ -11,7 +11,7 @@
 	} = $props();
 
 	const buttonVariants = cva(
-		'shadow-custom text-para pointer-cursor inline-flex items-center justify-center rounded-lg border-4 border-zinc-950 bg-pink-400 px-4 py-2 font-normal transition-all hover:shadow-none',
+		'shadow-custom text-para cursor-pointer inline-flex items-center justify-center rounded-lg border-4 border-zinc-950 bg-pink-400 px-4 py-2 font-normal transition-all hover:shadow-none',
 		{
 			variants: {
 				variant: {

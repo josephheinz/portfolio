@@ -23,7 +23,7 @@
 		gsap.to('textPath', {
 			attr: {
 				startOffset: function (index) {
-					return -17.5 + index * 17.5 + '%';
+					return "-=" + -17.5 + index * 17.5 + '%';
 				}
 			},
 			scrollTrigger: {

@@ -94,10 +94,10 @@
 			mask-size: contain;
 			background: repeating-linear-gradient(
 				135deg,
-				oklch(65.6% 0.241 354.308),
-				oklch(65.6% 0.241 354.308) 20px,
-				oklch(45.2% 0.211 324.591) 20px,
-				oklch(45.2% 0.211 324.591) 40px
+				oklch(74% 0.238 322.16),
+				oklch(74% 0.238 322.16) 20px,
+				oklch(40.1% 0.17 325.612) 20px,
+				oklch(40.1% 0.17 325.612) 40px
 			);
 			overflow: hidden;
 			position: relative;
