@@ -7,7 +7,9 @@
 		onclick = () => {},
 		variant = 'default' || 'secondary' || 'disabled' || 'neutral',
 		size = 'default' || 'sm' || 'lg',
-		className = ''
+		className = '',
+		type = 'button' || 'link',
+		href = ''
 	} = $props();
 
 	const buttonVariants = cva(
@@ -34,10 +36,20 @@
 	);
 </script>
 
-<button
-	class={cn(buttonVariants({ variant, size, className }))}
-	{onclick}
-	disabled={variant === 'disabled'}
->
-	{@render children?.()}
-</button>
+{#if type === 'link'}
+	<a
+		class={cn(buttonVariants({ variant, size, className }))}
+		disabled={variant === 'disabled'}
+		{href}
+	>
+		{@render children?.()}
+	</a>
+{:else}
+	<button
+		class={cn(buttonVariants({ variant, size, className }))}
+		{onclick}
+		disabled={variant === 'disabled'}
+	>
+		{@render children?.()}
+	</button>
+{/if}

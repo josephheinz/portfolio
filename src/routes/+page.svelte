@@ -25,10 +25,10 @@
 </script>
 
 <Navbar>
-	<Navlink href="#">Home</Navlink>
-	<Navlink href="#">Projects</Navlink>
-	<Navlink href="#">Cerfifications</Navlink>
-	<Navlink href="#">About</Navlink>
+	<Navlink href="#stack">Skills</Navlink>
+	<Navlink href="#projects">Projects</Navlink>
+	<Navlink href="#certs">Cerfifications</Navlink>
+	<Navlink href="#about">About</Navlink>
 </Navbar>
 
 <!-- Hero section -->
@@ -39,27 +39,30 @@
 		<h1 class="text-h1 font-black">I'm Joseph</h1>
 		<h2 class="text-h4 font-semibold text-stone-500">A web developer from Michigan</h2>
 		<div class="h-[100px]"></div>
-		<h3 class="text-h3 font-bold text-stone-700">Something</h3>
 		<div class="flex gap-6 px-2 py-3">
-			<Button className="text-h6">My Work</Button>
-			<Button className="text-h6" variant="secondary">About Me</Button>
+			<Button className="text-h6" type="link" href="#projects">My Work</Button>
+			<Button className="text-h6" variant="secondary" type="link" href="#about">About Me</Button>
 		</div>
+		<div class="h-[100px]"></div>
 	</div>
 </main>
 <NameMarquee />
 <!-- About me -->
-<div class="flex h-min flex-col items-end justify-start px-40 py-16">
+<div class="flex h-min flex-col items-end justify-start px-40 py-16" id="about">
 	<h1 class="text-h1 font-black">About Me</h1>
 </div>
 <SquiggleSpacer />
-<div class="flex h-min flex-col items-start justify-start px-40 py-16">
+<div class="flex h-min flex-col items-start justify-start px-40 py-16" id="projects">
 	<h1 class="text-h1 font-black">Projects</h1>
 	<div class="grid w-full grid-cols-3 gap-4 p-6">
-		<!-- svelte-ignore a11y_missing_attribute -->
 		<ProjectCard
 			technologies={['nodejs', 'docker', 'svelte', 'nginx', 'tailwindcss']}
 			links={['https://github.com/josephheinz/Livestream-Website']}
-			><img slot="thumbnail" src="josephheinzlive.png" />
+			><!-- svelte-ignore a11y_img_redundant_alt --><img
+				slot="thumbnail"
+				src="josephheinzlive.png"
+				alt="JosephHeinz.live meta image"
+			/>
 			<h1 slot="title">JosephHeinz.Live</h1>
 			<p slot="description">
 				A livestream site I created that uses my own RTMP server so I can stream directly to my own
@@ -70,7 +73,7 @@
 		<ProjectCard
 			technologies={['unity', 'csharp']}
 			links={['https://github.com/josephheinz/Acceptance-Day-Demo-Project/tree/main']}
-			><img slot="thumbnail" src="unityassets.png" />
+			><img slot="thumbnail" src="unityassets.png" alt="Screenshot of Unity assets" />
 			<h1 slot="title">Unity Platformer Assets</h1>
 			<p slot="description">
 				A standalone package of assets I made for my programming class using Unity. It is licensed
@@ -80,7 +83,7 @@
 		<ProjectCard
 			technologies={['svelte', 'tailwindcss']}
 			links={['https://github.com/josephheinz/portfolio']}
-			><img slot="thumbnail" src="portfolio.png" />
+			><img slot="thumbnail" src="portfolio.png" alt="Screenshot of my portfolio" />
 			<h1 slot="title">Portfolio</h1>
 			<p slot="description">
 				A personal portfolio website made using Svelte and TailwindCSS. It displays my projects and
@@ -90,18 +93,18 @@
 	</div>
 </div>
 <SquiggleSpacer />
-<div class="flex h-min flex-col items-end justify-start px-40 py-16">
+<div class="flex h-min flex-col items-end justify-start px-40 py-16" id="certs">
 	<h1 class="text-h1 font-black">Certifications</h1>
 	<div class="grid w-full grid-cols-4 gap-4 p-6">
-		<img src="certs/unity-programmer.png" />
-		<img src="certs/it-specialist-html-and-css.png" />
-		<img src="certs/ITS-Badges_JavaScript_1200px.png" />
-		<img src="certs/ITS-Badges_Python_1200px.png" />
-		<img src="certs/comptia-itf.png" />
+		<img src="certs/unity-programmer.png" alt="Unity programmer certificate" />
+		<img src="certs/it-specialist-html-and-css.png" alt="HTML and CSS certificate" />
+		<img src="certs/ITS-Badges_JavaScript_1200px.png" alt="JavaScript certificate" />
+		<img src="certs/ITS-Badges_Python_1200px.png" alt="Python certificate" />
+		<img src="certs/comptia-itf.png" alt="Comptia IT Fundamentals certificate" />
 	</div>
 </div>
 <SquiggleSpacer />
-<div class="flex h-min flex-col items-start justify-start px-40 py-16">
+<div class="flex h-min flex-col items-start justify-start px-40 py-16" id="stack">
 	<h1 class="text-h1 font-black">Tech Stack</h1>
 	<div class="grid w-full grid-cols-6 gap-6 p-8">
 		{#each Object.keys(TechStack) as techKey}
