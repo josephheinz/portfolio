@@ -8,14 +8,14 @@ export default {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: 'index.html', // allow dynamic routes to load
+            fallback: "index.html", // allow dynamic routes to load
             strict: false            // suppress warnings about dynamic routes
         }),
         paths: {
             base: '/portfolio' // required for GH Pages project site
         },
         prerender: {
-            entries: [] // don't try to prerender routes
+            entries: ['*']  // or default: true if you want full static
         }
     }
 };
