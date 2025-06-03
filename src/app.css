@@ -18,7 +18,7 @@
 		--text-h6: 1.414rem;
 		--text-para: 1rem;
 
-		--shadow-custom:4px 2px 0px 0px rgba(0,0,0,1);
+		--shadow-custom: 4px 2px 0px 0px rgba(0, 0, 0, 1);
 	}
 }
 
@@ -26,4 +26,30 @@
 	* {
 		@apply text-zinc-950 font-league font-normal
 	}
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	border-radius: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: oklch(14.1% 0.005 285.823);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #333;
+	border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #444;
+}
+
+body, html{
+	overflow-x:hidden;
 }

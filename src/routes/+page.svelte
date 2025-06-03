@@ -50,6 +50,12 @@
 <!-- About me -->
 <div class="flex h-min flex-col items-end justify-start px-40 py-16" id="about">
 	<h1 class="text-h1 font-black">About Me</h1>
+	<p class="text-para max-w-[500px] text-right">
+		I'm a full stack developer from Michigan, who specializes in front end web development. In my
+		free time I enjoy making websites, developing video games, going to the gym, and hanging out
+		with my friends. I've been self taught in programming for half a decade and have been interested
+		in computers for much longer than that.
+	</p>
 </div>
 <SquiggleSpacer />
 <div class="flex h-min flex-col items-start justify-start px-40 py-16" id="projects">
@@ -71,13 +77,14 @@
 			</p>
 		</ProjectCard>
 		<ProjectCard
-			technologies={['unity', 'csharp']}
-			links={['https://github.com/josephheinz/Acceptance-Day-Demo-Project/tree/main']}
-			><img slot="thumbnail" src="unityassets.png" alt="Screenshot of Unity assets" />
-			<h1 slot="title">Unity Platformer Assets</h1>
+			technologies={['godot']}
+			links={['Cryptkeep/', 'https://github.com/josephheinz/final-project-godot']}
+			><img slot="thumbnail" src="Cryptkeep/ss.png" alt="Screenshot of Cryptkeep" />
+			<h1 slot="title">Cryptkeep</h1>
 			<p slot="description">
-				A standalone package of assets I made for my programming class using Unity. It is licensed
-				under the MIT license, and free to use for any purpose.
+				A game I made for my software development class using the Godot game engine. It is a
+				roguelike dungeon crawler deckbuilder that takes heavy inspiration from Slay the Spire. All
+				the systems and assets are bespoke, made by me.
 			</p>
 		</ProjectCard>
 		<ProjectCard
