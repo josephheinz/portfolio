@@ -2,6 +2,7 @@
 	import { cn } from '$lib/utils';
 	import { cva } from 'cva';
 
+	// all of these are passable objects to this component
 	const {
 		children,
 		onclick = () => {},
@@ -12,6 +13,7 @@
 		href = ''
 	} = $props();
 
+	// cva stands for class variant authority, which is a utility for creating tailwind classes based on the authority and inheritance of classes
 	const buttonVariants = cva(
 		'shadow-custom text-para cursor-pointer inline-flex items-center justify-center rounded-lg border-4 border-zinc-950 bg-pink-400 px-4 py-2 font-normal transition-all hover:shadow-none',
 		{
@@ -36,6 +38,7 @@
 	);
 </script>
 
+<!-- Can have two different types of buttons: button and link -->
 {#if type === 'link'}
 	<a
 		class={cn(buttonVariants({ variant, size, className }))}

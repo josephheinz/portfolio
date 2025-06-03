@@ -2,6 +2,7 @@ import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { cubicOut } from "svelte/easing";
 
+// merges classes together with tailwind
 export function cn(...inputs) {
 	return twMerge(clsx(inputs));
 }
@@ -47,6 +48,8 @@ export const flyAndScale = (
 	};
 };
 
+
+// tooltip example from sveltekit, onhover it creates a tooltip over the bound object
 export function tooltip(node, params) {
 	node.classList.add('tooltip');
 	node.setAttribute('tabindex', 0);

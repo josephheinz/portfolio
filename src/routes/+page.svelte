@@ -58,6 +58,7 @@
 	</p>
 </div>
 <SquiggleSpacer />
+<!-- Projects -->
 <div class="flex h-min flex-col items-start justify-start px-40 py-16" id="projects">
 	<h1 class="text-h1 font-black">Projects</h1>
 	<div class="grid w-full grid-cols-3 gap-4 p-6">
@@ -78,7 +79,7 @@
 		</ProjectCard>
 		<ProjectCard
 			technologies={['godot']}
-			links={['Cryptkeep/', 'https://github.com/josephheinz/final-project-godot']}
+			links={['Cryptkeep/Final Project Godot.html', 'https://github.com/josephheinz/final-project-godot']}
 			><img slot="thumbnail" src="Cryptkeep/ss.png" alt="Screenshot of Cryptkeep" />
 			<h1 slot="title">Cryptkeep</h1>
 			<p slot="description">
@@ -100,6 +101,7 @@
 	</div>
 </div>
 <SquiggleSpacer />
+<!-- Certifications -->
 <div class="flex h-min flex-col items-end justify-start px-40 py-16" id="certs">
 	<h1 class="text-h1 font-black">Certifications</h1>
 	<div class="grid w-full grid-cols-4 gap-4 p-6">
@@ -111,9 +113,11 @@
 	</div>
 </div>
 <SquiggleSpacer />
+<!-- Tech Stack -->
 <div class="flex h-min flex-col items-start justify-start px-40 py-16" id="stack">
 	<h1 class="text-h1 font-black">Tech Stack</h1>
 	<div class="grid w-full grid-cols-6 gap-6 p-8">
+		<!-- The keys of the tech stack dict are used in the devicons -->
 		{#each Object.keys(TechStack) as techKey}
 			<Tech tech={techKey} name={TechStack[techKey]} />
 		{/each}

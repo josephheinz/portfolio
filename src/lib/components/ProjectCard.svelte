@@ -21,6 +21,7 @@
 	</span>
 	<div class="flex w-full items-center justify-center gap-2">
 		{#each technologies as tech}
+		<!-- The first letter of the tech is capitalized and the rest are lowercase -->
 			<i use:tooltip={tech.charAt(0).toUpperCase() + tech.slice(1)} class={`devicon-${tech}-plain colored text-h6 relative cursor-default`}></i>
 		{/each}
 	</div>

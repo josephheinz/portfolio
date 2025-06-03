@@ -9,6 +9,7 @@
 	var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 	onMount(() => {
+		// smooths out the scrolling
 		const lenis = new Lenis({
 			lerp: 0.1,
 			smoothWheel: true
@@ -20,6 +21,7 @@
 		}
 		requestAnimationFrame(raf);
 
+		// changes the offset of the text path to the right based on the amount of scroll the user has done
 		gsap.to('textPath', {
 			attr: {
 				startOffset: function (index) {
