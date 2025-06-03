@@ -1,0 +1,1 @@
+import"../chunks/CWj6FrbW.js";import{i as t}from"../chunks/CKRI17JI.js";import{p,e as r}from"../chunks/B6KiCfgl.js";import{o as i}from"../chunks/EOwBJS1u.js";function f(n,o){p(o,!1),i(()=>{window.location.href="/Cryptkeep/Final Project Godot.html"}),t(),r()}export{f as component};
