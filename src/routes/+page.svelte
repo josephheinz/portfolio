@@ -63,24 +63,32 @@
 	<h1 class="text-h1 font-black">Projects</h1>
 	<div class="grid w-full grid-cols-3 gap-4 p-6">
 		<ProjectCard
-			technologies={['nodejs', 'docker', 'svelte', 'nginx', 'tailwindcss']}
-			links={['https://github.com/josephheinz/Livestream-Website']}
+			technologies={['csharp', 'nuget', 'dotnetcore']}
+			links={['https://github.com/josephheinz/SparxECS']}
 			><!-- svelte-ignore a11y_img_redundant_alt --><img
 				slot="thumbnail"
-				src="josephheinzlive.png"
-				alt="JosephHeinz.live meta image"
+				src="SparxECS.png"
+				alt="SparxECS logo"
+				class="w-full h-full object-cover"
 			/>
-			<h1 slot="title">JosephHeinz.Live</h1>
+			<h1 slot="title">SparxECS</h1>
 			<p slot="description">
-				A livestream site I created that uses my own RTMP server so I can stream directly to my own
-				website instead of running my livestream through an existing service such as Twitch or
-				YouTube.
+				A lightweight entity component system built off of sparse sets in C#. Originally starting as
+				a terminal-based game engine, I switched development to focus on a general purpose package.
 			</p>
 		</ProjectCard>
 		<ProjectCard
 			technologies={['godot']}
-			links={['Cryptkeep/Final Project Godot.html', 'https://github.com/josephheinz/final-project-godot']}
-			><img slot="thumbnail" src="Cryptkeep/ss.png" alt="Screenshot of Cryptkeep" />
+			links={[
+				'Cryptkeep/Final Project Godot.html',
+				'https://github.com/josephheinz/final-project-godot'
+			]}
+			><img
+				slot="thumbnail"
+				src="Cryptkeep/ss.png"
+				alt="Screenshot of Cryptkeep"
+				class="w-full h-full object-cover"
+			/>
 			<h1 slot="title">Cryptkeep</h1>
 			<p slot="description">
 				A game I made for my software development class using the Godot game engine. It is a
@@ -91,7 +99,12 @@
 		<ProjectCard
 			technologies={['svelte', 'tailwindcss']}
 			links={['https://github.com/josephheinz/portfolio']}
-			><img slot="thumbnail" src="portfolio.png" alt="Screenshot of my portfolio" />
+			><img
+				slot="thumbnail"
+				src="portfolio.png"
+				alt="Screenshot of my portfolio"
+				class="w-full h-full object-cover"
+			/>
 			<h1 slot="title">Portfolio</h1>
 			<p slot="description">
 				A personal portfolio website made using Svelte and TailwindCSS. It displays my projects and

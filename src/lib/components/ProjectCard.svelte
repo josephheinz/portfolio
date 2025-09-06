@@ -9,7 +9,7 @@
 	class="shadow-custom m-4 flex flex-col items-center justify-between gap-8 rounded-lg border-4 border-zinc-950 bg-amber-200 p-4"
 >
 	<div
-		class="shadow-custom relative max-w-full overflow-hidden rounded-lg border-4 border-zinc-950"
+		class="shadow-custom relative max-w-full overflow-hidden aspect-video rounded-lg border-4 border-zinc-950"
 	>
 		<slot name="thumbnail" />
 	</div>
