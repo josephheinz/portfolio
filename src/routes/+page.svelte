@@ -69,7 +69,7 @@
 				slot="thumbnail"
 				src="SparxECS.png"
 				alt="SparxECS logo"
-				class="w-full h-full object-cover"
+				class="h-full w-full object-cover"
 			/>
 			<h1 slot="title">SparxECS</h1>
 			<p slot="description">
@@ -87,7 +87,7 @@
 				slot="thumbnail"
 				src="Cryptkeep/ss.png"
 				alt="Screenshot of Cryptkeep"
-				class="w-full h-full object-cover"
+				class="h-full w-full object-cover"
 			/>
 			<h1 slot="title">Cryptkeep</h1>
 			<p slot="description">
@@ -97,18 +97,19 @@
 			</p>
 		</ProjectCard>
 		<ProjectCard
-			technologies={['svelte', 'tailwindcss']}
-			links={['https://github.com/josephheinz/portfolio']}
+			technologies={['nodejs', 'slack']}
+			links={['https://github.com/josephheinz/Hypothetical-Bot']}
 			><img
 				slot="thumbnail"
-				src="portfolio.png"
-				alt="Screenshot of my portfolio"
-				class="w-full h-full object-cover"
+				src="thinking.png"
+				alt="Screenshot of Hypothetical Bot's profile picture"
+				class="h-full w-full object-cover"
 			/>
-			<h1 slot="title">Portfolio</h1>
+			<h1 slot="title">Hypothetical Bot</h1>
 			<p slot="description">
-				A personal portfolio website made using Svelte and TailwindCSS. It displays my projects and
-				experience.
+				A Slack bot I made for my Software Engineering class. Sends a daily hypothetical and then
+				grabs all the answers and finds who did and didn't answer and the most popular answer for
+				that day.
 			</p>
 		</ProjectCard>
 	</div>
