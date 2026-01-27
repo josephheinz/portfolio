@@ -11,9 +11,6 @@ export default {
             fallback: "index.html", // allow dynamic routes to load
             strict: false            // suppress warnings about dynamic routes
         }),
-        paths: {
-            base: '/portfolio' // required for GH Pages project site
-        },
         prerender: {
             entries: ['*']  // or default: true if you want full static
         }
