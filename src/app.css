@@ -28,28 +28,12 @@
 	}
 }
 
-/* width */
-::-webkit-scrollbar {
-	width: 5px;
-	border-radius: 25px;
+*::-webkit-scrollbar {
+	display: none;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-	background: oklch(14.1% 0.005 285.823);
-}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #333;
-	border-radius: 25px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-	background: #444;
-}
-
-body, html{
-	overflow-x:hidden;
+body,
+html {
+	overflow-x: hidden;
 }
