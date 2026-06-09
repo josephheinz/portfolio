@@ -3,6 +3,8 @@
 	import WorkSection from '$lib/components/WorkSection.svelte';
 	import { reveal } from '$lib/actions';
 	import { EXPERIENCE } from '$lib/data';
+
+	let { data } = $props();
 </script>
 
 <span id="top"></span>
@@ -71,7 +73,7 @@
 </header>
 
 <!-- ============ WORK ============ -->
-<WorkSection />
+<WorkSection projects={data.projects} />
 
 <!-- ============ ABOUT ============ -->
 <section class="relative border-t border-hair-2 py-[clamp(80px,13vw,170px)]" id="about">

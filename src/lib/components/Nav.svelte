@@ -26,7 +26,7 @@
 
 <nav class="nav-backdrop sticky top-0 z-50 border-b border-hair-2">
 	<div class="wrap flex items-center justify-between gap-5 py-5">
-		<a class="font-display font-semibold text-[18px] tracking-[-0.01em] no-underline" href="#top">
+		<a class="font-display font-semibold text-[18px] tracking-[-0.01em] no-underline" href="/">
 			Joseph Heinz<span class="text-accent">.</span>
 		</a>
 		<div class="flex items-center gap-[34px] max-[720px]:gap-5">
