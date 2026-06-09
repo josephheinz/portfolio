@@ -71,6 +71,52 @@ export const PROJECTS: Project[] = [
 	}
 ];
 
+export interface Certification {
+	year: string;
+	name: string;
+	issuer: string;
+	badge?: string;
+}
+
+export const CERTIFICATIONS: Certification[] = [
+	{
+		year: '—',
+		name: 'Unity Certified Programmer',
+		issuer: 'Unity Technologies',
+		badge: '/certs/unity-programmer.png'
+	},
+	{
+		year: '—',
+		name: 'IT Specialist: Databases',
+		issuer: 'Certiport',
+		badge: '/certs/ITSDatabases.png'
+	},
+	{
+		year: '—',
+		name: 'IT Specialist: Python',
+		issuer: 'Certiport',
+		badge: '/certs/ITS-Badges_Python_1200px.png'
+	},
+	{
+		year: '—',
+		name: 'IT Specialist: JavaScript',
+		issuer: 'Certiport',
+		badge: '/certs/ITS-Badges_JavaScript_1200px.png'
+	},
+	{
+		year: '—',
+		name: 'IT Specialist: HTML and CSS',
+		issuer: 'Certiport',
+		badge: '/certs/it-specialist-html-and-css.png'
+	},
+	{
+		year: '—',
+		name: 'CompTIA IT Fundamentals+',
+		issuer: 'CompTIA',
+		badge: '/certs/comptia-itf.png'
+	}
+];
+
 export const EXPERIENCE: Experience[] = [
 	{
 		years: '2023 — Now',

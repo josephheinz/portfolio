@@ -2,7 +2,7 @@
 	import Nav from '$lib/components/Nav.svelte';
 	import WorkSection from '$lib/components/WorkSection.svelte';
 	import { reveal } from '$lib/actions';
-	import { EXPERIENCE } from '$lib/data';
+	import { EXPERIENCE, CERTIFICATIONS } from '$lib/data';
 
 	let { data } = $props();
 </script>
@@ -177,13 +177,48 @@
 	</div>
 </section>
 
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="relative border-t border-hair-2 py-[clamp(80px,13vw,170px)]" id="certifications">
+	<div class="wrap">
+		<div class="mb-[clamp(50px,7vw,92px)]">
+			<span
+				class="label inline-block rounded-full bg-accent-soft px-[12px] py-[5px] text-ink"
+				>04 — Certifications</span
+			>
+			<div class="mt-[18px]">
+				<h2 class="max-w-[18ch] text-[clamp(30px,4.4vw,50px)]">What I've earned.</h2>
+			</div>
+		</div>
+		<div class="flex flex-col">
+			{#each CERTIFICATIONS as cert, i}
+				<div
+					class="reveal grid grid-cols-[150px_1fr] items-center gap-[24px] border-t border-hair py-[clamp(24px,3vw,34px)] max-[600px]:grid-cols-1 max-[600px]:gap-[6px]"
+					class:border-b={i === CERTIFICATIONS.length - 1}
+					use:reveal
+				>
+					<span class="font-mono text-[13px] tracking-[0.04em] text-ink-soft">{cert.year}</span>
+					<div class="flex items-center gap-[20px]">
+						{#if cert.badge}
+							<img src={cert.badge} alt={cert.name} class="h-[56px] w-[56px] shrink-0 object-contain" />
+						{/if}
+						<div>
+							<div class="font-display font-semibold text-[clamp(19px,2.2vw,24px)]">{cert.name}</div>
+							<div class="mt-[3px] text-[16px] text-ink-soft">{cert.issuer}</div>
+						</div>
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
+
 <!-- ============ CONTACT ============ -->
 <section
 	class="relative border-t border-hair-2 py-[clamp(80px,13vw,170px)] text-center"
 	id="contact"
 >
 	<div class="wrap">
-		<span class="label text-ink-soft">04 — Contact</span>
+		<span class="label text-ink-soft">05 — Contact</span>
 		<h2 class="mt-[18px] text-[clamp(36px,7vw,84px)] tracking-[-0.03em]">
 			Let's build something
 			<span class="sig"

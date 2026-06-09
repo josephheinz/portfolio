@@ -242,6 +242,27 @@ a {
 		line-height: 1.08;
 	}
 
+	& h2 {
+		margin-top: 2.4em;
+		margin-bottom: 0.45em;
+	}
+
+	& h3 {
+		margin-top: 1.9em;
+		margin-bottom: 0.35em;
+	}
+
+	& h4 {
+		margin-top: 1.6em;
+		margin-bottom: 0.3em;
+	}
+
+	& h2 + p,
+	& h3 + p,
+	& h4 + p {
+		margin-top: 0;
+	}
+
 	& code,
 	& pre {
 		font-family: var(--font-mono);
